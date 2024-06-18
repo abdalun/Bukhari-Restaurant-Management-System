@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiter Landing Page - Bukhari Food Delivery Platform</title>
+    <link rel="stylesheet" href="waiterLanding.css">
+</head>
+<body>
+    <header>
+        <img src="images/Bukhari logo.jpg" alt="Bukhari Logo" class="logo">
+        <h1 class="heading">Waiter</h1>
+        <a href="waiterCart.html"><img src="images/icons8-cart-24.png" alt="Cart" class="cart-icon"></a>
+    </header>
+    <main>
+        <div class="form-container">
+            <label for="order-type">Order Type</label>
+            <select id="order-type">
+                <option value="Takeaway">Takeaway</option>
+                <option value="Dine-in">Dine-in</option>
+            </select>
+            <label for="order-number">Order Number</label>
+            <select id="order-number">
+                <!-- Generate options 1 to 50 -->
+                <script>
+                    for (let i = 1; i <= 50; i++) {
+                        document.write('<option value="' + i + '">' + i + '</option>');
+                    }
+                </script>
+            </select>
+            <label for="waiter-name">Waiter's Name</label>
+            <select id="waiter-name">
+                <option value="Chidy">Chidy</option>
+                <option value="Aziza">Aziza</option>
+                <option value="Asnati">Asnati</option>
+            </select>
+            <button class="take-order-btn">Take Order</button>
+        </div>
+    </main>
+    <script src="waiterLanding.js"></script>
+</body>
+</html>
